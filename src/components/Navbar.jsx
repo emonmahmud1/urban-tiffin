@@ -9,12 +9,12 @@ const site = {
 const Navbar = () => {
  return (
     <header className="bg-white shadow sticky top-0 z-40">
-      <div className="max-w-5xl mx-auto px-4 py-4 flex items-center justify-between">
-        <div>
+      <div className="max-w-5xl mx-auto px-4 py-4 flex flex-col sm:flex-row items-center justify-between gap-2">
+        <div className="text-center sm:text-left">
           <h1 className="text-xl font-bold">{site.name}</h1>
           <p className="text-sm text-slate-500">{site.subtitle}</p>
         </div>
-        <nav className="flex gap-6 text-gray-700 font-medium">
+        <nav className="flex flex-wrap justify-center gap-6 text-gray-700 font-medium">
           <Link to="/" className="hover:text-blue-600">Home</Link>
           <Link to="/menu" className="hover:text-blue-600">Menu</Link>
           <Link to="/about" className="hover:text-blue-600">About</Link>
